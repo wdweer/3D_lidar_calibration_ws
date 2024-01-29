@@ -1,0 +1,7 @@
+<!-- Load the robot description to the ROS parameter server.
+-->
+<launch>
+    <arg name="model" default="$(find hokuyo_description)/urdf/hokuyo_tf.urdf.xacro"/>
+
+    <param name="hokuyo_description" command="$(find xacro)/xacro $(arg model)" />
+</launch>

@@ -1,0 +1,28 @@
+<robot name="hokuyo_tf2" xmlns:xacro="http://wiki.ros.org/xacro">
+   <xacro:include filename="$(find hokuyo_description)/urdf/hokuyo1.urdf.xacro"/>
+
+   <xacro:hokuyo_laser1
+    xyz="6 2 -0.5"
+    rpy="0 0 0"
+    parent="base_link">
+  </xacro:hokuyo_laser1>
+
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+      <material name="black" />
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="1 1 1"/>
+      </geometry>
+    </collision>
+    
+  </link>
+
+</robot>

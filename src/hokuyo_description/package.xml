@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>hokuyo_description</name>
+  <version>0.0.1</version>
+  <description>The hokuyo_description package</description>
+
+  <maintainer email="your_email@example.com">your_name</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>urdf</depend>
+  <depend>xacro</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <!-- Other tools can go here -->
+  </export>
+</package>
